@@ -18,3 +18,9 @@ print (9-8+1*(1+1))
 # print(type(()))
 # print(type([]))
 # print(type({}))
+
+a = (1,1.1,'ceshi',1)
+# print(a[2])
+
+print(a.index('ceshi'))
+print(a.count(1))
