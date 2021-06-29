@@ -8,9 +8,9 @@ print (23333,55555) #打印多条
 print (9-8+1*(1+1))
 '''
 
-a = input('请输入:')
-b = input('请输入:')
-print('长度和为:',len(a)+len(b))
+# a = input('请输入:')
+# b = input('请输入:')
+# print('长度和为:',len(a)+len(b))
 
 # print(type('ha'))
 # print(type(1))
