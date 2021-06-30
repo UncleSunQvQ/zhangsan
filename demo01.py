@@ -50,7 +50,8 @@ print (9-8+1*(1+1))
 # a.clear() # 清除
 # xx = ['nihao','buaho']
 # a.extend(xx) #合并数组
-#  print(a+xx)
+# print(a)
+# print(a+xx)
 # b = a.count(1)
 # print(b)
 
@@ -59,24 +60,24 @@ print (9-8+1*(1+1))
 1.字典中的值没有顺序
 2.字典的结构必须是 键值对的结构  key:value
 '''
-'''
-a = {'name':'张三','age':18}
-a['high'] = '183cm'
-a['name'] = '李四'
+
+# a = {'name':'张三','age':18}
+# a['high'] = '183cm'
+# a['name'] = '李四'
 # a.pop('name')
 # print(a)
 
 # b = a.get('name')
 # print(b)
 
-# a.update(phone=222) # 有就更新，没有就新增
+# a.update(phone = 222,name = '赵六') # 有就更新，没有就新增
 # print(a)
 
-# print(a.get('name1'))
-# print(a['name1'])
-del a['name']
-print(a)
-'''
+# print(a.get('name1')) # 若值不存在，不报错
+# print(a['name1']) # 若值不存在，报错
+# del a['name']
+# print(a)
+
 
 # name = input('请输入姓名:')
 # age = input('请输入年龄:')
