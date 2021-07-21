@@ -93,24 +93,46 @@ print (9-8+1*(1+1))
 2.字典的结构必须是 键值对的结构  key:value
 '''
 
+# 取值-方式一
 # a = {'name':'张三','age':18}
-# a['high'] = '183cm'
-# a['name'] = '李四'
-# a.pop('name')
-# print(a)
+# print(a['name']) 
 
-# b = a.get('name')
+# 取值-方式二
+# a = {'name':'张三','age':18}
+# b = a.get('name') 
 # print(b)
 
+# 取值-方式三
+# a = {'name':'张三','age':18}
+# b = a.pop('name')
+# print(b)
+
+# 三种取值的区别
+# a = {'name':'张三','age':18}
+# print(a.get('name1')) # 若值不存在，不报错
+# print(a.pop('name1')) # 若值不存在，报错
+# print(a['name1']) # 若值不存在，报错
+
+# 新增
+# a = {'name':'张三','age':18}
+# a['high'] = '183cm' 
+# print(a)
+
+# 修改
+# a = {'name':'张三','age':18}
+# a['name'] = '李四'
+# print(a)
+
+# a = {'name':'张三','age':18}
 # a.update(phone = 222,name = '赵六') # 有就更新，没有就新增
 # print(a)
 
-# print(a.get('name1')) # 若值不存在，不报错
-# print(a['name1']) # 若值不存在，报错
+# 删除
+# a = {'name':'张三','age':18}
 # del a['name']
 # print(a)
 
-
+# 练习
 # name = input('请输入名字:')
 # age = input('请输入年龄:')
 # sex = input('请输入性别:')
