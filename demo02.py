@@ -2,14 +2,17 @@
 # a = int(input('请输入第一位数字:'))
 # b = int(input('请输入第二位数字:'))
 # if a > b:
-#     print('前者大于后者:')3703
+#     print('前者大于后者:')
 # elif a == b:
 #     print('前者等于后者')
 # else:
 #     print('后者大于前者')
 
+'''
+if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只要满足之前的if就不会再继续执行语句
+'''
 
-
+# exit()是为了避免报错
 # a = input('请输入1-9的数字:')
 # if a == '':
 #     print('不能为空')
@@ -23,6 +26,18 @@
 #     print('大')
 # else:
 #     print('小')
+
+# a = input('请输入0-9的数字:')
+# if a == '':
+#     print('不能为空')
+# if a in '0123456789':
+#     a = int(a)
+# else:
+#     print('请输入数字')
+# if a > 5:
+#     print('比5大')
+# else:
+#     print('小于等于5')
 
 
 # a = 1
@@ -49,6 +64,7 @@
 #     a = a + 1
 # print('合格的人：',highchengji)
 # print('不合格的人:',lowchengji)
+
 
 
 # h = {}
