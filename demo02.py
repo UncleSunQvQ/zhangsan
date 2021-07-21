@@ -71,6 +71,8 @@
 # b = list(range(0,100,30)) # 自动生成一个数列，步进/步长
 # print(b)
 
+
+
 # for循环练习
 # highchengji = {}
 # lowchengji = {}
@@ -98,7 +100,6 @@
 #     for i in light:
 #         for j in range(light[i]):
 #             print('距离',i,'结束','还有',light[i]-j,'秒')
-
 
 
 # 注册练习

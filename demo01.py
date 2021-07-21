@@ -31,27 +31,59 @@ print (9-8+1*(1+1))
 # print(a.index('ceshi'))
 # print(a.count(1))
 
+
+# 二维元组
+# a = (1,1.1,'ceshi',1)
 # b = (a,'haha','xixi')
-# print(b[0][0])
+# print(b[0][1])
+
 
 # 切片
+# a = (1,1.1,'ceshi',1)
 # print(a[0:2]) #左闭右开
 # print(a[2:])
 
-# 数组 PS：元组完成以后不可以修改，数组可以修改
+
+# 数组 在数组中添加数据的两种方式 （PS：元组完成以后不可以修改，数组可以修改）
+# 方式一
 # a = [1,1.1,'ceshi',False,True] # 数组
 # a.append('append1') # 往数组中增加数据，在尾部添加
 # a.append('append2')
+# print(a)
+
+# 方式二
+# a = [1,1.1,'ceshi',False,True] # 数组
 # a.insert(0,1) # 往数组中增加数据，在下标处添加
+# print(a)
+
+
+# 数组的剪切
+# a = [1,1.1,'ceshi',False,True] # 数组
 # b = a.pop(0) # 剪切
 # c = a.pop(0) # 剪切
 # print(b+c)
 # print(b)
-# a.clear() # 清除
+
+# 数组的清除
+# a = [1,1.1,'ceshi',False,True] # 数组
+# a.clear() # 清除数组
+# print(a)
+
+# 清除数组中的固定数据
+# a = [1,1.1,'ceshi',False,True] # 数组
+# a.remove('ceshi')
+# print(a)
+
+
+# 数组的合并
+# a = [1,1.1,'ceshi',False,True] # 数组
 # xx = ['nihao','buaho']
 # a.extend(xx) #合并数组
-# print(a)
-# print(a+xx)
+# print(a) #合并方式一
+# print(a+xx) #合并方式二
+
+# 数组中数据的统计（False是0，True是1）
+# a = [1,1.1,'ceshi',False,True]
 # b = a.count(1)
 # print(b)
 
