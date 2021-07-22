@@ -150,8 +150,9 @@ if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只�
 #     print(i)
 
 
-# 方法的定义
+# 方法的定义，def:方法的声明  ceshiu：方法的名字  u:方法的参数
 # def ceshiu(u):
+#     '''判断以a开头，5-8位'''
 #     if 5 <= len(u) <= 8:
 #         if u[0] in 'a':
 #             print('ok')
@@ -159,37 +160,60 @@ if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只�
 #             print('账号必须以a开头')
 #     else:
 #         print('账号长度为5-8位')
-# ceshiu('a256')
+# ceshiu('123456')
 
 # def jiafa(a,b):
+#     '''两数相加'''
 #     if type(a) is int and type(b) is int:
-#         return a+b
+#         print(a+b)
 #     else:
-#         return '输入的数据类型必须为数字'
-# print(jiafa(12,20))
+#         print('请输入数字')
+# jiafa(12,13)
 
 
 # 返回,以及自己写方法
-# def ceshi(u):
+# def c(u,p):
 #     if 5 <= len(u) <= 8:
 #         if u[0] in 'a':
-#             return True
+#             if len(p) == 6:
+#                 return 'ok'
+#             else:
+#                 return '密码长度为6位'
 #         else:
-#             return '首字母必须为a'
+#             return '账号首字母以a开头'
 #     else:
 #         return '账号长度为5-8位'
-
-
 # u = input('请输入账号:')
-# if ceshi(u) == True:
+# p = input('请输入密码:')
+# if c(u,p) in 'ok':
 #     print('注册成功')
 # else:
-#     print(ceshi(u))
+#     print(c(u,p))
 
 
 
-# 捕获异常
+# 异常捕获
+# try:
+#     print('1'+2)
+# except:
+#     print('上面的代码写错了')
+
+
+# 异常类
 # try:
 #     print('1'+2)
 # except Exception as e:
-#     print('上面的代码写错了!',e)
+#     print('错误原因:',e)
+
+
+
+# 为防止代码报错的实例
+# try:
+#     u = input('请输入你的姓名:')
+#     a = int(input('请输入你的年龄:'))
+#     if a >= 18:
+#         print(u,'成年了')
+#     else:
+#         print(u,'未成年')
+# except:
+#     print('请输入正确的年龄')
