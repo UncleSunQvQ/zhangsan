@@ -12,7 +12,7 @@
 if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只要满足之前的if就不会再继续执行语句
 '''
 
-# exit()是为了避免报错
+# exit()会直接结束
 # a = input('请输入1-9的数字:')
 # if a == '':
 #     print('不能为空')
@@ -66,7 +66,7 @@ if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只�
 # print('不合格的人:',lowchengji)
 
 
-
+    
 # h = {}
 # l = {}
 # s = ['张三','李四','王五']
@@ -101,6 +101,9 @@ if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只�
 #         highchengji[i] = b
 # print('合格的人：',highchengji)
 # print('不合格的人:',lowchengji)
+
+
+
 
 # 九九乘法表
 # for i in range(1,10):
@@ -149,7 +152,6 @@ if-if  与  if-elif 的区别:只要都满足就会遍历所有if，而elif只�
 
 # 方法的定义
 # def ceshiu(u):
-#     '''方法的定义'''
 #     if 5 <= len(u) <= 8:
 #         if u[0] in 'a':
 #             print('ok')
