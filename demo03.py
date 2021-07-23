@@ -16,7 +16,7 @@ class 声明类的名字
 类里面所有的方法都必须传一个参数，叫self
 '''
 
-# 如果想要更灵活  1.需将def __init__(self):改为def __init__(self，sex,age,high)，然后self.sex = sex 类推  2.实例化时，zhangsan = gf()改为zhangsan = gf('女'，'18','170cm')
+
 # class gf():
 #     def __init__(self):
 #         self.sex = '女'
@@ -43,4 +43,27 @@ class 声明类的名字
 # zhangsan.work()
 # zhangsan.gexing(1)
 # print(zhangsan.age)
+
+
+# 更灵活的写法，要改动def __init__代码块及实例化，要注意添加'关键print'
+class wuti():
+    def __init__(self,chang,kuan,gao):
+        self.chang = chang
+        self.kuan = kuan
+        self.gao = gao
+
+    def yanse(self,num):
+        print('物体的长为'+self.chang+'宽为'+self.kuan+'高为'+self.gao) #关键print
+        if num == 1:
+            print('蓝色')
+        else:
+            print('绿色')
+
+    def qiwei(self):
+        print('无')
+
+dongxi = wuti('1','2','3')
+dongxi.qiwei()
+dongxi.yanse(1)
+# print(dongxi.chang)
 
