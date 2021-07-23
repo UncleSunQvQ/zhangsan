@@ -12,12 +12,15 @@
 '''
 class 声明类的名字
 然后类名首字母必须大写
+默认属性方法_init_
+使用_init_来接受参数
+每个类里面的方法，第一个参数必须是self
 面向对象编程
 类里面所有的方法都必须传一个参数，叫self
 '''
 
 
-# class gf():
+# class Gf():
 #     def __init__(self):
 #         self.sex = '女'
 #         self.age = '18'
@@ -39,14 +42,14 @@ class 声明类的名字
     
 
 # 类的实例化
-# zhangsan = gf()
+# zhangsan = Gf() # 类的实例化
 # zhangsan.work()
 # zhangsan.gexing(1)
 # print(zhangsan.age)
 
 
-# 更灵活的写法，要改动def __init__代码块及实例化，要注意添加'关键print'
-class wuti():
+# 更灵活的写法，要改动def __init__默认属性方法及实例化，要注意添加'关键print'
+class Wuti():
     def __init__(self,chang,kuan,gao):
         self.chang = chang
         self.kuan = kuan
@@ -62,8 +65,25 @@ class wuti():
     def qiwei(self):
         print('无')
 
-dongxi = wuti('1','2','3')
+dongxi = Wuti('1','2','3')
 dongxi.qiwei()
 dongxi.yanse(1)
-# print(dongxi.chang)
+print(dongxi.gao)
 
+
+# 类的继承   Wuti:父类   Newwuti:子类
+# class Newwuti(Wuti):
+#     pass
+
+# dongxi = Newwuti('1','2','2')
+# dongxi.yanse(1)
+# print(dongxi.gao)
+
+
+# 类的重写/多态
+class Newwuti(Wuti):
+    def qiwei(self):
+        print('氨味')
+
+dongxi = Newwuti('3','3','3')
+dongxi.qiwei()
