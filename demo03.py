@@ -49,26 +49,26 @@ class 声明类的名字
 
 
 # 更灵活的写法，要改动def __init__默认属性方法及实例化，要注意添加'关键print'
-class Wuti():
-    def __init__(self,chang,kuan,gao):
-        self.chang = chang
-        self.kuan = kuan
-        self.gao = gao
+# class Wuti():
+#     def __init__(self,chang,kuan,gao):
+#         self.chang = chang
+#         self.kuan = kuan
+#         self.gao = gao
 
-    def yanse(self,num):
-        print('物体的长为'+self.chang+'宽为'+self.kuan+'高为'+self.gao) #关键print
-        if num == 1:
-            print('蓝色')
-        else:
-            print('绿色')
+#     def yanse(self,num):
+#         print('物体的长为'+self.chang+'宽为'+self.kuan+'高为'+self.gao) #关键print
+#         if num == 1:
+#             print('蓝色')
+#         else:
+#             print('绿色')
 
-    def qiwei(self):
-        print('无')
+#     def qiwei(self):
+#         print('无')
 
-dongxi = Wuti('1','2','3')
-dongxi.qiwei()
-dongxi.yanse(1)
-print(dongxi.gao)
+# dongxi = Wuti('1','2','3')
+# dongxi.qiwei()
+# dongxi.yanse(1)
+# print(dongxi.gao)
 
 
 # 类的继承   Wuti:父类   Newwuti:子类
@@ -81,9 +81,13 @@ print(dongxi.gao)
 
 
 # 类的重写/多态
-class Newwuti(Wuti):
-    def qiwei(self):
-        print('氨味')
+# class Newwuti(Wuti):
+#     def qiwei(self):
+#         print('氨味')
 
-dongxi = Newwuti('3','3','3')
-dongxi.qiwei()
+# dongxi = Newwuti('3','3','3')
+# dongxi.qiwei()
+
+
+def test():
+    print('test1')
