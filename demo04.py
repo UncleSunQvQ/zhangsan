@@ -24,11 +24,69 @@
 # print('%.1f华氏度 = %.1f摄氏度' % (f, c))
 # print(f'{f:.1f}华氏度 = {c:.1f}摄氏度')
 
+
 # r = float(input('请输入圆的半径:'))
 # c = 2 * 3.14 * r
 # s = 3.14 * r * r
 # print(f'周长:{c:.1f},面积:{s:.1f}')
 # print('周长:%.1f,面积:%.1f' %(c,s))
+
+
+
+# 用户名是admin且密码是123456则身份验证成功否则身份验证失败
+# u = input('请输入用户名:')
+# p = input('请输入密码:')
+# if u == 'admin' and p == '123456':
+#     print('验证成功')
+# else:
+#     print('验证失败')
+
+
+# x = int(input('请输入x:'))
+# if x > 1:
+#     print(f'f(x) = 3 * {x} - 5','=',3*x-5)
+# elif -1 <= x <= 1:
+#     print(f'f(x) = {x} + 2','=',x+2)
+# else:
+#     print(f'f(x) = 5 * {x} + 3','=',5*x+3)
+
+# import random
+# a = random.randint(1,3)
+# b = 0
+# while True:
+#     b += 1
+#     c = int(input('请输入:'))
+#     if c > a:
+#         print('大于目标数字')
+#     elif c < a:
+#         print('小于目标数字')
+#     else:
+#         print('猜对了')
+#         break
+# print(f'共猜了{b}次')
+
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print(j,'x',i,'=',j*i,end='\t')
+#     print()
+
+
+import random
+a = random.randint(1,3)
+b = 0
+while True:
+    b += 1
+    c = int(input('请输入:'))
+    if c < a:
+        print('小了')
+    elif c > a:
+        print('大了')
+    else:
+        print('猜对了')
+        break
+print(f'共猜了{b}次')
+
+
 
 
 # a = float(input('请输入a:'))
@@ -93,3 +151,20 @@
 # from demo02 import test as d2
 # d3()
 # d2()
+
+
+# import random
+# counters = [0] * 6
+# for _ in range(6000):
+#     face = random.randint(1, 6)
+#     counters[face - 1] += 1
+# for face in range(1, 7):
+#     print(f'{face}点出现了{counters[face - 1]}次')
+
+# items3 = []
+# for x in 'ABC':
+#     for y in '12':
+#         items3.append(x + y)
+# print(items3)
+
+
