@@ -71,20 +71,7 @@
 #     print()
 
 
-import random
-a = random.randint(1,3)
-b = 0
-while True:
-    b += 1
-    c = int(input('请输入:'))
-    if c < a:
-        print('小了')
-    elif c > a:
-        print('大了')
-    else:
-        print('猜对了')
-        break
-print(f'共猜了{b}次')
+
 
 
 
