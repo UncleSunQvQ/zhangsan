@@ -71,6 +71,40 @@
 #     print()
 
 
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print(j,'x',i,'=',j*i,end = '\t')
+#     print()
+
+
+
+# a = int(input('请输入正整数:'))
+# is_prime = True
+# for i in range(2,a):
+#     if a % i == 0:
+#         is_prime = False
+#         break
+# if a != 0 and is_prime == 1:
+#     print(f'{a}是素数')
+# else:
+#     print(f'{a}不是素数')
+
+# 寻找水仙花数
+# for a in range(1,10):
+#     for b in range(0,10):
+#         for c in range(0,10):
+#             if a**3 + b**3 + c**3 == a*100 + b*10 + c:
+#                 print(a*100+b*10+c)
+
+
+
+
+# for x in range(0,21):
+#     for y in range(0,34):
+#         z = 100 - x - y
+#         if 5*x + 3*y + z//3 == 100 and z % 3 == 0:
+#             print(f'公鸡:{x} 母鸡:{y} 小鸡:{z}')
+
 
 
 
