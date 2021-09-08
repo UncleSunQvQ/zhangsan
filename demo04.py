@@ -70,6 +70,12 @@
 #         print(j,'x',i,'=',j*i,end='\t')
 #     print()
 
+# 输出斐波那契数列前20个数
+# a, b = 0, 1
+# for _ in range(20):
+#     a, b = b, a + b
+#     print(a, end=' ')
+
 
 # for i in range(1,10):
 #     for j in range(1,i+1):
@@ -99,39 +105,42 @@
 
 
 # Craps赌博游戏
-from random import randint
-money = 1000
-while money > 0:
-    du = int(input('请下注:'))
-    if du > money:
-        print(f'余额不足,当前余额为{money}')
-        continue
-    else:
-        need_go_on = False
-        play = randint(1,6) + randint(1,6)
-        if play == 7 or play == 11:
-            money += du
-            print(f'玩家摇出了{play}点，玩家胜!余额为{money}')
-        elif play == 2 or play == 3 or play == 12:
-            money -= du
-            print(f'玩家摇出了{play}点，庄家胜!余额为{money}')
-        else:
-            need_go_on = True
-            print(f'玩家摇出了{play}点，游戏继续!')
-        while need_go_on:
-            play_2 = randint(1,6) + randint(1,6)
-            if play_2 == 7:
-                money -= du
-                need_go_on = False
-                print(f'玩家摇出了{play_2}点，庄家胜!余额为{money}')
-            elif play_2 == play:
-                money += du
-                need_go_on = False
-                print(f'玩家摇出了{play_2}点，玩家胜!余额为{money}')
-            else:
-                print(f'玩家摇出了{play_2}点')
-                continue
-print('玩家破产')
+# from random import randint
+# money = 1000
+# while money > 0:
+#     du = int(input('请下注:'))
+#     if du > money:
+#         print(f'余额不足,当前余额为{money}')
+#         continue
+#     else:
+#         need_go_on = False
+#         play = randint(1,6) + randint(1,6)
+#         if play == 7 or play == 11:
+#             money += du
+#             print(f'玩家摇出了{play}点，玩家胜!余额为{money}')
+#         elif play == 2 or play == 3 or play == 12:
+#             money -= du
+#             print(f'玩家摇出了{play}点，庄家胜!余额为{money}')
+#         else:
+#             need_go_on = True
+#             print(f'玩家摇出了{play}点，游戏继续!')
+#         while need_go_on:
+#             play_2 = randint(1,6) + randint(1,6)
+#             if play_2 == 7:
+#                 money -= du
+#                 need_go_on = False
+#                 print(f'玩家摇出了{play_2}点，庄家胜!余额为{money}')
+#             elif play_2 == play:
+#                 money += du
+#                 need_go_on = False
+#                 print(f'玩家摇出了{play_2}点，玩家胜!余额为{money}')
+#             else:
+#                 print(f'玩家摇出了{play_2}点')
+#                 continue
+# print('玩家破产!')
+
+
+
 
 
 
