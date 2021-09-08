@@ -98,12 +98,51 @@
 
 
 
+# Craps赌博游戏
+from random import randint
+money = 1000
+while money > 0:
+    du = int(input('请下注:'))
+    if du > money:
+        print(f'余额不足,当前余额为{money}')
+        continue
+    else:
+        need_go_on = False
+        play = randint(1,6) + randint(1,6)
+        if play == 7 or play == 11:
+            money += du
+            print(f'玩家摇出了{play}点，玩家胜!余额为{money}')
+        elif play == 2 or play == 3 or play == 12:
+            money -= du
+            print(f'玩家摇出了{play}点，庄家胜!余额为{money}')
+        else:
+            need_go_on = True
+            print(f'玩家摇出了{play}点，游戏继续!')
+        while need_go_on:
+            play_2 = randint(1,6) + randint(1,6)
+            if play_2 == 7:
+                money -= du
+                need_go_on = False
+                print(f'玩家摇出了{play_2}点，庄家胜!余额为{money}')
+            elif play_2 == play:
+                money += du
+                need_go_on = False
+                print(f'玩家摇出了{play_2}点，玩家胜!余额为{money}')
+            else:
+                print(f'玩家摇出了{play_2}点')
+                continue
+print('玩家破产')
+
+
+
+
 
 # for x in range(0,21):
 #     for y in range(0,34):
 #         z = 100 - x - y
 #         if 5*x + 3*y + z//3 == 100 and z % 3 == 0:
 #             print(f'公鸡:{x} 母鸡:{y} 小鸡:{z}')
+
 
 
 
