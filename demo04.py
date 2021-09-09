@@ -1,24 +1,3 @@
-# u = input('请输入用户名:')
-# p = input('请输入密码:')
-# if u == 'admin' and p == '123456':
-#     print('验证成功')
-# else:
-#     print('验证失败')
-
-# x = int(input('请输入x:'))
-# if x > 1:
-#     y = 3 * x - 5
-#     # print(y)
-# elif x < -1:
-#     y = 5 * x + 3
-#     # print(y)
-# else:
-#     y = x + 2
-# print(y)
-# print(f'{x},{y}')
-# print('%d,%d' %(x,y))
-
-
 # f = float(input('请输入华氏温度: '))
 # c = (f - 32) / 1.8
 # print('%.1f华氏度 = %.1f摄氏度' % (f, c))
@@ -65,23 +44,35 @@
 #         break
 # print(f'共猜了{b}次')
 
+# from random import randint
+# a = randint(1,6)
+# b = 0
+# while True:
+#     b += 1
+#     c = int(input('请输入猜测的数字:'))
+#     if c < a:
+#         print('小了')
+#     elif c > a:
+#         print('大了')
+#     else:
+#         print('猜中了')
+#         break
+# print(f'一共猜了{b}次')
+
+
+
 # for i in range(1,10):
 #     for j in range(1,i+1):
 #         print(j,'x',i,'=',j*i,end='\t')
 #     print()
 
+
+
 # 输出斐波那契数列前20个数
 # a, b = 0, 1
 # for _ in range(20):
 #     a, b = b, a + b
-#     print(a, end=' ')
-
-
-# for i in range(1,10):
-#     for j in range(1,i+1):
-#         print(j,'x',i,'=',j*i,end = '\t')
-#     print()
-
+#     print(a, end='  ')
 
 
 # a = int(input('请输入正整数:'))
@@ -95,6 +86,8 @@
 # else:
 #     print(f'{a}不是素数')
 
+
+
 # 寻找水仙花数
 # for a in range(1,10):
 #     for b in range(0,10):
@@ -102,6 +95,11 @@
 #             if a**3 + b**3 + c**3 == a*100 + b*10 + c:
 #                 print(a*100+b*10+c)
 
+for a in range(1,10):
+    for b in range(0,10):
+        for c in range(0,10):
+            if a**3 + b**3 + c**3 == a*100 + b*10 + c:
+                print(a*100+b*10+c)
 
 
 # Craps赌博游戏
