@@ -134,10 +134,6 @@
 
 
 
-
-
-
-
 # for x in range(0,21):
 #     for y in range(0,34):
 #         z = 100 - x - y
@@ -227,3 +223,27 @@
 # print(items3)
 
 
+
+'''
+设计一个生成指定长度验证码的函数。
+说明：验证码由四位数字和英文大小写字母构成。
+'''
+# from random import randrange
+# s = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+# def yanzheng(scode=4):
+#     code = ''
+#     for _ in range(scode):
+#         index = randrange(0,len(s))
+#         code += s[index]
+#     return code
+# for _ in range(10):
+#     print(yanzheng())
+
+
+import random
+import string
+def yanzheng(scode=4):
+    s = string.digits + string.ascii_letters
+    return ''.join(random.choices(s,k=scode))
+for _ in range(10):
+    print(yanzheng())
