@@ -239,11 +239,12 @@
 # for _ in range(10):
 #     print(yanzheng())
 
+# 简便方法
+# import random
+# import string
+# def yanzheng(scode=4):
+#     s = string.digits + string.ascii_letters
+#     return ''.join(random.choices(s,k=scode))
+# for _ in range(10):
+#     print(yanzheng())
 
-import random
-import string
-def yanzheng(scode=4):
-    s = string.digits + string.ascii_letters
-    return ''.join(random.choices(s,k=scode))
-for _ in range(10):
-    print(yanzheng())
