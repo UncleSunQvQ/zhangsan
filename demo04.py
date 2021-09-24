@@ -248,3 +248,45 @@
 # for _ in range(10):
 #     print(yanzheng())
 
+
+# 设计一个函数返回给定文件名的后缀名
+# def geshi(filename):
+#     pos = filename.rfind('.')
+#     return filename[pos+1:] if pos > 0 else ''
+# print(geshi('a.txt'))
+# print(geshi('a'))
+
+# 简便方法
+# from os.path import splitext
+
+# def get_suffix(filename):
+#     return splitext(filename)[1][1:]
+
+# print(get_suffix('a.txt'))
+# print(get_suffix('a'))
+
+
+
+# import os
+# import time
+
+# content = '北 京 欢 迎 你 为 你 开 天 辟 地           '
+# while True:
+#     # Windows清除屏幕上的输出
+#     # os.system('cls')  
+#     # macOS清除屏幕上的输出
+#     os.system('cls')
+#     print(content)
+#     time.sleep(0.3)
+#     content = content[1:] + content[0]
+
+
+# 将一颗色子掷6000次，统计每个点数出现的次数。
+# import random
+# tongji = [0] * 6
+# for _ in range(6000):
+#     dian = random.randint(1,6)
+#     tongji[dian-1] += 1
+# for dian in range(1,7):
+#     print(f'{dian}点共出现{tongji[dian-1]}次')
+
