@@ -4,6 +4,7 @@
 # print(f'{f:.1f}华氏度 = {c:.1f}摄氏度')
 
 
+
 # r = float(input('请输入圆的半径:'))
 # c = 2 * 3.14 * r
 # s = 3.14 * r * r
@@ -44,6 +45,8 @@
 #         break
 # print(f'共猜了{b}次')
 
+
+
 # from random import randint
 # a = randint(1,6)
 # b = 0
@@ -58,7 +61,6 @@
 #         print('猜中了')
 #         break
 # print(f'一共猜了{b}次')
-
 
 
 # for i in range(1,10):
@@ -85,7 +87,6 @@
 #     print(f'{a}是素数')
 # else:
 #     print(f'{a}不是素数')
-
 
 
 # 寻找水仙花数
