@@ -151,6 +151,25 @@
 #     sticks -= 5
 
 
+# 练习
+# a = 21
+# print(f'共{a}根，谁拿最后一根谁就输了!')
+# while True:
+#     try:
+#         b = int(input('请输入(1-4):'))
+#         if b <= 0 or b > 4:
+#             print('error')
+#             continue
+#         if a == 1:
+#             print('lose')
+#             break
+#         else:
+#             a -= 5
+#             print(f'我拿了{5-b}跟,还剩{a}跟')
+#     except:
+#         print('请输入正确数字!')
+
+
 
 
 
