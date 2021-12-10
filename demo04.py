@@ -4,7 +4,7 @@
 
 # print('%.1f华氏度 = %.1f摄氏度' % (f, c))
 
-# print(f'{f:.1f}华氏度 = {c:.1f}摄氏度')
+# print(f'{f:.1f} 华氏度 = {c:.1f} 摄氏度')
 
 
 
@@ -111,13 +111,46 @@
 # print(f'一共猜了{b}次')
 
 
-
+# 乘法表1
 # for i in range(1,10):
 
 #     for j in range(1,i+1):
 
 #         print(j,'x',i,'=',j*i,end='\t')
 #     print()
+
+# 乘法表2
+# i = 1
+# print('-' * 50)
+# while i < 11:
+#     n = 1
+#     while n < 11:
+#         print('{:4d}'.format(i * n),end=' ')  # print(f'{i * n:4d}',end=' ')
+#         n += 1
+#     print()
+#     i += 1
+# print('-' * 50)
+
+
+# 有 21 根棍子，首先用户选 1 到 4 根棍子，然后电脑选 1 到 4 根棍子。谁选到最后一根棍子谁就输。(用户和电脑一次选的棍子总数只能是 5)
+# sticks = 21
+
+# print("There are 21 sticks, you can take 1-4 number of sticks at a time.")
+# print("Whoever will take the last stick will lose")
+
+# while True:
+#     print("Sticks left: " , sticks)
+#     if sticks == 1:
+#         print("You took the last stick, you lose")
+#         break
+#     sticks_taken = int(input("Take sticks(1-4):"))
+#     if sticks_taken >= 5 or sticks_taken <= 0:
+#         print("Wrong choice")
+#         continue
+#     print("Computer took: " , (5 - sticks_taken) , "\n")
+#     sticks -= 5
+
+
 
 
 
@@ -130,6 +163,7 @@
 
 #     a, b = b, a + b
 #     print(a, end='  ')
+
 
 
 
@@ -155,6 +189,7 @@
 
 
 
+
 # # 寻找水仙花数
 
 # for a in range(1,10):
@@ -166,6 +201,7 @@
 #             if a**3 + b**3 + c**3 == a*100 + b*10 + c:
 
 #                 print(a*100+b*10+c)
+
 
 
 
@@ -383,6 +419,7 @@
 #         items3.append(x + y)
 
 # print(items3)
+
 
 
 
