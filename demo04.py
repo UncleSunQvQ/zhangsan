@@ -8,15 +8,12 @@
 
 
 
-
+# import math
 # r = float(input('请输入圆的半径:'))
-
-# c = 2 * 3.14 * r
-
-# s = 3.14 * r * r
+# c = 2 * math.pi * r
+# s = math.pi * r * r
 
 # print(f'周长:{c:.1f},面积:{s:.1f}')
-
 # print('周长:%.1f,面积:%.1f' %(c,s))
 
 
@@ -81,45 +78,29 @@
 # print(f'共猜了{b}次')
 
 
-
 # from random import randint
-
-# a = randint(1,6)
-
-# b = 0
-
+# count = 0
+# b = randint(1, 3)
 # while True:
-
-#     b += 1
-
-#     c = int(input('请输入猜测的数字:'))
-
-#     if c < a:
-
-#         print('小了')
-
-#     elif c > a:
-
-#         print('大了')
-
+#     a = int(input('请输入:'))
+#     count += 1
+#     if a < b:
+#         print('小于预测数字!')
+#     elif a > b:
+#         print('大于预测数字!')
 #     else:
-
-#         print('猜中了')
-
+#         print('等于预测数字!')
 #         break
-
-# print(f'一共猜了{b}次')
+# print(f'共猜了{count}次!')
 
 
 # 乘法表1
 # for i in range(1,10):
-
 #     for j in range(1,i+1):
-
-#         print(j,'x',i,'=',j*i,end='\t')
+#         print(j,'x',i,'=',j*i,end='\t') 
 #     print()
 
-# 乘法表2
+# 乘法表2.1
 # i = 1
 # print('-' * 50)
 # while i < 11:
@@ -131,6 +112,14 @@
 #     i += 1
 # print('-' * 50)
 
+# 乘法表2.2
+# i = 1
+# print('-' * 75)
+# for i in range(1,11):
+#     for j in range(1,11):
+#         print(i * j,end = '\t')
+#     print()
+# print('-' * 75)
 
 # 有 21 根棍子，首先用户选 1 到 4 根棍子，然后电脑选 1 到 4 根棍子。谁选到最后一根棍子谁就输。(用户和电脑一次选的棍子总数只能是 5)
 # sticks = 21
@@ -150,26 +139,23 @@
 #     print("Computer took: " , (5 - sticks_taken) , "\n")
 #     sticks -= 5
 
-
 # 练习
 # a = 21
 # print(f'共{a}根，谁拿最后一根谁就输了!')
 # while True:
 #     try:
-#         b = int(input('请输入(1-4):'))
+#         b = int(input('请选择(1-4):'))
 #         if b <= 0 or b > 4:
-#             print('error')
+#             print('只能选择1-4根!')
 #             continue
-#         if a == 1:
+#         elif a == 1:
 #             print('lose')
 #             break
 #         else:
 #             a -= 5
-#             print(f'我拿了{5-b}跟,还剩{a}跟')
+#             print(f'对方选择{5-b}根,目前剩余{a}根!')
 #     except:
-#         print('请输入正确数字!')
-
-
+#         print('请输入正确数字(1-4)')
 
 
 
@@ -182,8 +168,6 @@
 
 #     a, b = b, a + b
 #     print(a, end='  ')
-
-
 
 
 # a = int(input('请输入正整数:'))
@@ -207,6 +191,27 @@
 #     print(f'{a}不是素数')
 
 
+# 判断学生成绩是否达标的程序，要求输入学生数量，以及各个学生物理、数学、历史三科的成绩，如果总成绩小于 120，程序打印 “failed”，否则打印 “passed”
+# n = int(input('请输入学生数量: '))
+# data = {}
+# kemu = ('物理','数学','历史')
+# for i in range(n):
+#     name = input(f'请输入第{i+1}位学生的姓名: ')
+#     mark = []
+#     for j in kemu:
+#         mark.append(int(input(f'{name}的{j}成绩为: ')))
+#     data[name] = mark
+# for x,y in data.items():
+#     total = sum(y)
+#     if total < 120:
+#         print(f'{x}  failed')
+#     else:
+#         print(f'{x}  passed')
+
+
+
+
+
 
 
 # # 寻找水仙花数
@@ -221,6 +226,10 @@
 
 #                 print(a*100+b*10+c)
 
+# 列表推导式
+# a = [1, 2, 3]
+# z = [x + 1 for x in [x ** 2 for x in a]]
+# print(z)
 
 
 
@@ -583,6 +592,7 @@
 # for index, item in enumerate(items):
 
 #     print(f'{index}: {item}')
+
 
 
 
