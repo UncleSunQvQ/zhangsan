@@ -211,9 +211,10 @@
 
 # 无售有后续查询
 # n = []
-# for i in range(1):
-#     n.append(input('请输入: '))
-# print([str(item).zfill(16) for item in n])
+# for i in range(2):
+#     n.append(input(f'请输入第{i+1}个: '))
+# a = tuple([str(item).zfill(16) for item in n])
+# print(a)
 
 
 # # 寻找水仙花数
