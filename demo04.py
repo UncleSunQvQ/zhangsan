@@ -209,9 +209,11 @@
 #         print(f'{x}  passed')
 
 
-
-
-
+# 无售有后续查询
+# n = []
+# for i in range(1):
+#     n.append(input('请输入: '))
+# print([str(item).zfill(16) for item in n])
 
 
 # # 寻找水仙花数
