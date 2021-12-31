@@ -209,12 +209,18 @@
 #         print(f'{x}  passed')
 
 
+
+
 # 无售有后续查询
-# n = []
-# for i in range(2):
-#     n.append(input(f'请输入第{i+1}个: '))
-# a = tuple([str(item).zfill(16) for item in n])
+# names='''
+# 04E5B5D2F94980
+# 04E5B5D2F94945
+# '''
+# names_list = [y for y in (x.strip() for x in names.splitlines()) if y]
+
+# a = tuple([str(item).zfill(16) for item in names_list])
 # print(a)
+
 
 
 # # 寻找水仙花数
