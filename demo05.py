@@ -38,11 +38,8 @@
 # print('相同卡号元组: ',tuple([i for i,j in common.items() if j > 1]))
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> baf3d016b2fec204a8d5df1c95fbdea836863675
 # 重复卡号
 # from collections import Counter
 # import sys
@@ -65,8 +62,4 @@
 #         print('|{}{}|'.format(i.ljust(20),j))
 # print('-' * 7, '重复卡号', '-' * 6,'\n','\n')
 # # 相同卡号列表
-<<<<<<< HEAD
 # print('相同卡号元组: ',tuple([i for i,j in dict(common).items() if j > 1]))
-=======
-# print('相同卡号元组: ',tuple([i for i,j in dict(common).items() if j > 1]))
->>>>>>> baf3d016b2fec204a8d5df1c95fbdea836863675
